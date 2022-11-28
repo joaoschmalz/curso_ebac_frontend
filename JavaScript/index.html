@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Módulo 7</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício módulo 7</h1>
+        <form id="form">
+            <input id="campo-a" type="number" placeholder="Número A" onfocus="removeMessage()" required/>
+            <p class="error-message">
+                O valor do 'Campo B' deve ser superior ao valor do 'Campo A'
+            </p>
+            <input id="campo-b" type="number" placeholder="Número B" required/>
+            <button type="submit">Enviar</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
