@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    margin-top: 150px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: bisque;
+}
+
+form {
+    margin-top: 16px;
+    text-align: center;
+}
+
+form input {
+    height: 35px;
+    width: 250px;
+}
+
+button {
+    height: 35px;
+    width: 75px;
+    background-color: aquamarine;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+ul {
+    margin: 40px;
+}
+
+ul li {
+    list-style: none;
+    max-height: 30px;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: blueviolet;
+}
+
+.done {
+    text-decoration: line-through;
+}
