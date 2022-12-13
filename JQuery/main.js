@@ -1,5 +1,3 @@
-let countTask = 0;
-
 $(document).ready(function() {
     
     $('form').on('submit', function(e) {
@@ -7,15 +5,18 @@ $(document).ready(function() {
 
         const newTask = $('input').val();
 
-        const newLine = $(`<li id="task-${countTask}" onClick="done(id)" style="display: none">${newTask}</li>`);
+        const newLine = $(`<li>${newTask}</li>`);
         $(newLine).appendTo('ul');
         $(newLine).fadeIn(500);
 
         $('input').val(' ');
-        countTask ++;      
+    })
+
+    $(document).on('click', 'li', function () {
+        if ($(this).css('text-decoration') === 'none solid rgb(0, 0, 0)') {
+            $(this).css('text-decoration', 'line-through');
+        } else {
+            $(this).css('text-decoration', 'none solid rgb(0, 0, 0)');
+        }
     })
 })
-
-function done(elem){
-    document.getElementById(elem).classList.add('done');
-}
